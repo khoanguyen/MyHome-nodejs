@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>@model.title</title>
+		<link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" charset="utf-8">
+		@html.block('css')
+	</head>
+	<body>		
+		<nav id='navbar'>
+			<ul class='nav'>
+				<li><a href='#page1' class='nav-menu-item' data-target-page='page1'>Home</a></li>
+				<li><a href='#page2' class='nav-menu-item' data-target-page='page2'>About me</a></li>
+				<li><a href='#page3' class='nav-menu-item' data-target-page='page3'>This Website</a></li>
+			</ul>			
+		</nav>
+		
+		@html.block('content')
+		<footer>
+			@html.block('footer')	
+		</footer>
+		<script src='/javascripts/jquery.min.js'></script>
+		<script src='/javascripts/layout.js'></script>
+		<script src='/javascripts/main.js'></script>
+		@html.block('js')
+	</body>
+</html>

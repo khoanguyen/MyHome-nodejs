@@ -1,0 +1,14 @@
+﻿@html.extend('layout', function(model){
+    @html.block('content', function(model){            
+        <div class='page' id='page1'> 
+			<a name='page1' />
+			@html.include('page1')
+		</div>
+		<div class='page' id='page2'> 
+			<a name='page2' />
+		</div>
+		<div class='page' id='page3'> 
+			<a name='page3' />
+		</div>
+    })
+})

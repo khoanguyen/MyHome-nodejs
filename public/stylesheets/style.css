@@ -1,0 +1,108 @@
+body {
+  margin:0px;
+  font-size: 14px;
+  font-family: 'Pavanam', sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+nav {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:75px;
+    text-align:right;
+    color : white;
+    z-index:100;    
+}
+
+#page3 {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/page1_2.jpg);    
+    top:200%;
+}
+
+#page2 {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/page2_2.jpg);    
+    top:100%;
+}
+
+#page1 {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/page3.jpg);    
+}
+
+div.page {
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:absolute; 
+    left:0px;
+    right:0px;    
+    height:100%;    
+}
+
+div.page-content {
+    position:absolute;
+    top:100px;
+    left:100px;
+    right:100px;
+    bottom:100px;    
+}
+
+.nav-placeholder {
+    height:75px;
+}
+
+.logo {
+    vertical-align:top;
+    margin-left:30px;
+    margin-top:30px;
+    font-size : large;
+    font-weight : bold;
+    display:inline-block;
+    background:blue;
+}
+
+.profile-photo {
+    border: 2px solid;
+    border-color: darkturquoise;
+    border-radius:50%;
+    width: 100px;
+    height: 100px;    
+}
+
+ul.nav {
+    margin-top: 40px;
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+ul.nav li {    
+    display:inline-block;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+ul.nav li a {
+    font-size: 18px;  
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    padding-right:15px;
+    padding-left:15px;
+
+    width:100px;
+    display:block;        
+    background:rgba(200,200,200,0.5);
+    transition: background 0.5s;
+}
+
+ul.nav li a.active {          
+    background:rgba(200,200,200,0.5);
+}
+
+ul.nav li a:hover {
+    background:#00b7ff;
+}
