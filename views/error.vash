@@ -1,8 +1,2 @@
-﻿@html.extend('layout', function(model){
-    @html.block('content', function(model){
-            
-        <p>@model.message</p>
-		<p>@model.error.stack</p>
-    })
-
-})
+<p>@model.message</p>
+<p>@model.error.stack</p>

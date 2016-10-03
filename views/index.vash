@@ -1,14 +1,52 @@
 ﻿@html.extend('layout', function(model){
-    @html.block('content', function(model){            
-        <div class='page' id='page1'> 
-			<a name='page1' />
-			@html.include('page1')
+@html.block('content', function(model){
+<div class="welcome-panel">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1><img src="/images/profile.jpg" id="profile-photo" /> Khoa Nguyen's homepage</h1>
+			</div>
 		</div>
-		<div class='page' id='page2'> 
-			<a name='page2' />
+	</div>
+</div>
+<div class="container main-container">
+	<div class="row">
+		<div class="col-md-7">
+			<div><h1>Welcome!</h1></div>
 		</div>
-		<div class='page' id='page3'> 
-			<a name='page3' />
+		<div class="col-md-5">
+			<h1>Recent</h1>
 		</div>
-    })
+	</div>
+	<div class="row content-panel">
+		<div class="col-md-7 left-content-panel">
+			<p>
+			<p>
+				Hello and have a great day!
+			</p>
+			<p>
+				This is my homepage which keeps my knowledge about what I learnt and on learning.
+				Along with the progress of the lessons I will make videos and put them here.
+			</p>
+			<p>
+				This page is created with Node.Js, Express and MongoDB.
+				You can check its source code at.
+				<br>
+				<a href="https://github.com/khoanguyen/MyHome-nodejs" target="blank"> https://github.com/khoanguyen/MyHome-nodejs</a>
+			</p>
+			<p>
+				Stay up to date and and study with me.
+			</p>
+
+			<p>
+				Cheers!
+			</p>
+			</p>
+		</div>
+		<div class="col-md-5">
+			
+		</div>
+	</div>
+</div>
+})
 })
