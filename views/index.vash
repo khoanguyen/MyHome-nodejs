@@ -13,13 +13,6 @@
 	<div class="row">
 		<div class="col-md-7">
 			<div><h1>Welcome!</h1></div>
-		</div>
-		<div class="col-md-5">
-			<h1>Recent</h1>
-		</div>
-	</div>
-	<div class="row content-panel">
-		<div class="col-md-7 left-content-panel">
 			<p>
 			<p>
 				Hello and have a great day!
@@ -44,9 +37,15 @@
 			</p>
 		</div>
 		<div class="col-md-5">
-			
+			<h1>Recent</h1>
+			@html.md(`\`\`\`javascript
+$(function(){
+  $('div').html('I am a div.');
+});
+\`\`\``)
 		</div>
 	</div>
+	
 </div>
 })
 })
